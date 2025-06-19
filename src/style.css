@@ -24,21 +24,43 @@ a:hover {
 
 body {
   margin: 0;
-  
+  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: #56acb8;
-    background: linear-gradient(0deg, rgba(86, 172, 184, 1) 0%, rgba(209, 209, 138, 1) 100%);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-ul {
-  list-style: none;
-  
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
 
 button {
@@ -48,15 +70,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background: #22C1C3;
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  border: 2px solid black;
-  
 }
 button:hover {
-  background: #22C1C3;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
@@ -72,6 +91,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #22C1C3;
+    background-color: #f9f9f9;
   }
 }

@@ -1,0 +1,23 @@
+.imageCard {
+    display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+        padding: 20px;
+        justify-items: center;
+        animation: fadeIn 0.5s ease-in-out both;
+            transition: transform 0.3s ease;
+}
+.imageCard:hover {
+    transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    } }
